@@ -11,9 +11,6 @@ with open(os.path.join(BASE_DIR, 'rosalind_iprb.txt')) as f:
 # k,m,n = 2,2,2
 (k,m,n) = (int(i) for i in a.split())
 
-GG = np.array([0,0])
-Gg = np.array([0,1])
-gg = np.array([1,1])
 pools = ['GG','Gg','gg']
 
 repeat_times = {'GG':k, 'Gg':m, 'gg':n} 
