@@ -4,12 +4,12 @@
 # Constraints. 0 ≤ 𝑛 ≤ 107.
 # Output Format. Output the last digit of 𝐹𝑛.
 
-num = [0,1]
 
 def calc_fib(n):
+    a,b = 0,1
     for i in range(2,n+1):
-        num.append((num[i-1]%10+num[i-2]%10)%10)
-    return num[n]
+        a,b = b,(b%10+a%10)%10
+    return b
 
 n = int(input())
 print(calc_fib(n))
