@@ -11,7 +11,7 @@ k = int(k)
 
 kmer = {}
 
-for i in [s[index : index + k] for index in range(0, len(s))]:
+for i in [s[index : index + k] for index in range(0, len(s)-k+1)]:
     if i not in kmer:
         kmer[i] = 1
     else: kmer[i] += 1
